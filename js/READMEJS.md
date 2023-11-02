@@ -1,0 +1,1 @@
+If you want to explicitly track an empty directory, you have to create a file in it. Since Git won't track empty directories, you have to trick it into doing so by adding a file in the directory to Git's index. Usually, people store a file called "." Here I am instead creating a README.md file specific to JS folder for future usefulness and clear file structure.
