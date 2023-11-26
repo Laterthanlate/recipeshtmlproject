@@ -17,27 +17,37 @@
         <!--Put links to recipe pages in img anchors to go with each list item, when creating recipe pages put link to home in main header-->
         <a href="./recipes/recipetest1.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpZNk1VSALCO8fmN6qt1cdAcTB21mB9IyEyOdgRMESAMa4Sfr66amAw2hCTvKnNHL_iR4&usqp=CAU" alt="Test recipe meal image" height="250" width="250"></a>
         <ul>
-            <li>
-            <pre>
-Test 1 (no tab)
-    Test 1 line 2 (tab)
-    Test 1 line 3 (tab)
-            Test 1 line 4 (tab2)
-            </pre></li>
-        <!--Test of img anchor before ul, with separate ul to be used for each li (recipe) if it is done this way - this is a possible fix to use for the bullet point issue in the previous versions of this project -->
             <li><pre>
-test 2 (no tab)
-    test 2 line 2(tab)
-    <a href="./recipes/recipetest1.html"><img src="./imgs/testfoodimg2-w740xh483.jpg" alt="Test recipe meal image 2" height="242" width="370"></a>
-            </pre></li>
-        <!--Test of img anchor inside pre after text to keep bullet point on the first line of text-->
-        <!--testfoodimg2...jpg has odd number of pixels in height, so rounded up a pixel when I resized it to half-->
-            <li><pre>
-test 3 (no tab)
-    test 3 line 2 (tab)
+Recipe 1
+    Recipe 1 description
+        <ul><li>Key Ingredient 1</li><li>Key Ingredient 2</li><li>Key Ingredient 3</li></ul>
             </pre></li>
         </ul>
     </p>
+    
+<!--Fix chosen for bullet point issue: put img anchor outside of the ul, before it, and have separate ul for each recipe-->
+    <p>
+        <a href="./recipes/recipetest1.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpZNk1VSALCO8fmN6qt1cdAcTB21mB9IyEyOdgRMESAMa4Sfr66amAw2hCTvKnNHL_iR4&usqp=CAU" alt="Test recipe meal image" height="250" width="250"></a>
+        <ul>
+            <li><pre>
+Recipe 2
+    Recipe 2 description
+        <ul><li>Key Ingredient 1</li><li>Key Ingredient 2</li><li>Key Ingredient 3</li></ul>
+            </pre></li>
+        </ul>
+    </p>
+<!--Decided to add a sub ul for key ingredients needed for the recipe, found it looked best to just bullet point them without a headline saying "Ingredients:", at least for now, may try something like that when I have CSS knowledge-->
+<!--Found that keeping the sub ul inside the pre, and listing it all one one line, directly under the description line, possibly tabbed over one more than the description, is the best look for this, while testing with run and debug tool-->
+<p>
+    <a href="./recipes/recipetest1.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpZNk1VSALCO8fmN6qt1cdAcTB21mB9IyEyOdgRMESAMa4Sfr66amAw2hCTvKnNHL_iR4&usqp=CAU" alt="Test recipe meal image" height="250" width="250"></a>
+    <ul>
+        <li><pre>
+Recipe 3
+    Recipe 3 description
+    <ul><li>Key Ingredient 1</li><li>Key Ingredient 2</li><li>Key Ingredient 3</li></ul>
+        </pre></li>
+    </ul>
+</p>
 
 </body>
 </html>
